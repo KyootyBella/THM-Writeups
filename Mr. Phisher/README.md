@@ -14,14 +14,14 @@ A colleague has downloaded a document from a phishing email, but it's telling th
 Whenever we open the room we get access to a word document and a zip file, inside the zip file we'll see the same document.
 
 Opening up the word document we'll see that we are told "this document contains macros"
-![[Macro_Warning.jpg]]
+![Macro_Warning.jpg](https://github.com/KyootyBella/THM-Writeups/blob/main/Mr.%20Phisher/Macro_Warning.jpg)
 
 Hmmm, maybe we should look at the macros?
 To locate macros in word documents:
 >Tools -> Macros -> Edit Macros
 
 here we'll locate the macro for the document, we find it here
-![[Macro_Location.jpg]]
+![Macro_Location](https://github.com/KyootyBella/THM-Writeups/blob/main/Mr.%20Phisher/Macro_Location.jpg)
 >MrPhisher.docm -> Project -> Modules -> NewMacros
 
 Here's the code by itself
@@ -71,7 +71,7 @@ print(b)
 (if you want a more cool looking way of getting the flag, add the print statement in the for loop and the flag will gradually get printed)
 
 when we now run the script we'll get flag
-![[Flag_Script.JPG]]
+![Flag_Script.JPG](https://github.com/KyootyBella/THM-Writeups/blob/main/Mr.%20Phisher/Flag_script.jpg)
 
 EYYYY, WE ACTUALLY GOT FLAG!
 `flag{redacted}`
@@ -84,7 +84,7 @@ After not wanting to debug code and write my own, I decided to do dynamic analys
 The security on the word document has made it so we can't run the macro. so we'll have to change the security settings.
 >Tools -> Options -> Security -> macro security
 
-![[Security.jpg]]
+![Security.jpg](https://github.com/KyootyBella/THM-Writeups/blob/main/Mr.%20Phisher/Security.jpg)
 when we have changed the security level to low we'll apply and close down the word document and open it again.
 
 Now we can run the macro, but first, let's put a breakpoint in the script so it doesn't end.
@@ -94,11 +94,11 @@ To add a breakpoint, set your point on the line you want to break at and press F
 To watch/follow the b value hower over b and press F7 or press the eye.
 
 Macro editor should look like this
-![[Finished_Script.jpg]]
+![Finished_Script.jpg](https://github.com/KyootyBella/THM-Writeups/blob/main/Mr.%20Phisher/Finished_Script.jpg)
 We have the b in watch down in the left corner and a red circle on line 10
 
 We will now run our script and get this output.
-![[Flag.jpg]]
+![Flag.jpg](https://github.com/KyootyBella/THM-Writeups/blob/main/Mr.%20Phisher/Flag.jpg)
 
 WE GOT FLAG!!
 `flag{redacted}`
