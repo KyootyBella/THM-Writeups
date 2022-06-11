@@ -73,7 +73,7 @@ print(b)
 (if you want a more cool looking way of getting the flag, add the print statement in the for loop and the flag will gradually get printed)
 
 when we now run the script we'll get flag
-![Flag_Script.JPG](https://github.com/KyootyBella/THM-Writeups/blob/main/Mr.%20Phisher/Flag_script.jpg)
+![Flag_Script](https://github.com/KyootyBella/THM-Writeups/blob/main/Mr.%20Phisher/Flag_script.JPG)
 
 EYYYY, WE ACTUALLY GOT FLAG!
 `flag{redacted}`
