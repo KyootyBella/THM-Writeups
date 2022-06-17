@@ -1,5 +1,5 @@
 # Mr. Phisher
-Easy subscriber TryHackMe room about phishing and malware in office word
+Easy Free TryHackMe room about phishing and malware in office word
 https://tryhackme.com/room/mrphisher
 
 Writeup by KyootyBella
